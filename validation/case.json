@@ -19,5 +19,5 @@
   "issue": 268,
   "branch": "fix/casper-metric-input-alignment-20260928",
   "title": "Reject unequal parse counts in the CASPER metric helper",
-  "head": "2bd0448b3224f76ec619eb7ac36396e79e676137"
+  "head": "e2f02c1a305d102668c73fb7c08b32904bc3c63b"
 }

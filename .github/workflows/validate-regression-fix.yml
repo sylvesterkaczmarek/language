@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           repository: sylvesterkaczmarek/language
-          ref: '2bd0448b3224f76ec619eb7ac36396e79e676137'
+          ref: 'e2f02c1a305d102668c73fb7c08b32904bc3c63b'
           path: work
           fetch-depth: 0
           persist-credentials: false
