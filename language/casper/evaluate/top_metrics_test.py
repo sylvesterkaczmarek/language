@@ -20,11 +20,10 @@ import subprocess
 import sys
 import tempfile
 
-from absl.testing import absltest
-from absl.testing import parameterized
+from absl.testing import absltest, parameterized
+
 from language.casper.evaluate import top_metrics
 from language.casper.utils import top_utils
-
 
 _PARSE = '[IN:SET_ALARM [SL:DATE_TIME seven ] ]'
 _OTHER_VALUE = '[IN:SET_ALARM [SL:DATE_TIME eight ] ]'
@@ -102,7 +101,8 @@ class TopMetricsTest(parameterized.TestCase):
           'language.casper.evaluate.evaluate_mtop_predictions',
           '--gold_file=' + str(gold), '--pred_file=' + str(pred),
           '--alsologtostderr',
-      ], capture_output=True, text=True, timeout=60, env=os.environ.copy())
+      ], capture_output=True, text=True, timeout=60, check=False,
+          env=os.environ.copy())
     if aligned:
       self.assertEqual(proc.returncode, 0, proc.stderr)
       self.assertIn('Exact match accuracy: 100.00', proc.stderr)
