@@ -1,0 +1,23 @@
+{
+  "repo": "google-research/language",
+  "base_branch": "master",
+  "base": "865fae65f63ef7e6b2989d4ff8b47f61750415a8",
+  "source": "language/casper/evaluate/top_metrics.py",
+  "test": "language/casper/evaluate/top_metrics_test.py",
+  "new_counts": [
+    17,
+    8
+  ],
+  "suite_files": [
+    "language/casper/evaluate/top_metrics_test.py",
+    "language/casper/utils",
+    "language/casper/augment"
+  ],
+  "suite_count": 37,
+  "pythonpath": ".",
+  "issue_url": "https://github.com/google-research/language/issues/268",
+  "issue": 268,
+  "branch": "fix/casper-metric-input-alignment-20260928",
+  "title": "Reject unequal parse counts in the CASPER metric helper",
+  "head": "2bd0448b3224f76ec619eb7ac36396e79e676137"
+}
